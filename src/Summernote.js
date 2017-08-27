@@ -6,26 +6,19 @@ module.exports = {
         model: {
             required: true,
         },
-
         name: {
             type: String,
             required: true,
         },
-
-        height: {
-            type: String,
-            default: '150'
-        }
+        config: {
+            type: Object,
+            default: {},
+        },
     },
 
     mounted() {
-
-    
-        let config = {
-            height: this.height
-        };
-
         let vm = this;
+        let config = this.config;
 
         config.callbacks = {
 

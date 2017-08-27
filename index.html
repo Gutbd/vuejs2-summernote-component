@@ -19,6 +19,7 @@
                         <summernote class="form-control"
                         name="editor"
                         :model="content"
+                        :config="config"
                         v-on:change="value => { content = value }"
                         ></summernote>
                         
@@ -36,6 +37,7 @@
         <script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.1.4/jquery.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.js"></script>
         <script type="text/javascript" src="https://cdn.bootcss.com/summernote/0.8.1/summernote.js"></script>
+        <script type="text/javascript" src="https://rawgit.com/semplon/summernote-ext-codewrapper/master/src/summernote-ext-codewrapper.js"></script>
         <!-- built files will be auto injected -->
     </body>
 </html>

@@ -11,8 +11,20 @@ new Vue({
 
     data() {
         return {
-            content: null   
-        }
+            content: null,
+            config: {
+                height: 100,
+                toolbar: [
+                    // [groupName, [list of button]]
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['insert', ['gxcode']], // plugin: summernote-ext-codewrapper
+              ],
+            },
+        };
     },
 
     components: {
